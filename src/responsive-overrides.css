@@ -1,0 +1,121 @@
+
+
+.modal-center {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  max-width: 95vw !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+  z-index: 9999 !important;
+}
+
+@media (max-width: 360px) {
+  .responsive-container {
+    padding: 0.5rem !important;
+  }
+  .modal-center {
+    width: 98vw !important;
+    min-width: 0 !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .responsive-container {
+    padding: 0.7rem !important;
+  }
+  .modal-center {
+    width: 97vw !important;
+  }
+}
+
+@media (max-width: 412px) {
+  .responsive-container {
+    padding: 0.8rem !important;
+  }
+  .modal-center {
+    width: 96vw !important;
+  }
+}
+
+@media (max-width: 414px) {
+  .responsive-container {
+    padding: 0.9rem !important;
+  }
+  .modal-center {
+    width: 95vw !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .responsive-container {
+    padding: 1rem !important;
+  }
+  .modal-center {
+    width: 90vw !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-container {
+    padding: 1.2rem !important;
+  }
+  .modal-center {
+    width: 85vw !important;
+  }
+}
+
+@media (min-width: 1366px) {
+  .responsive-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+  }
+  .modal-center {
+    max-width: 600px !important;
+  }
+}
+
+.responsive-container {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.z-modal {
+  z-index: 9999 !important;
+}
+
+@media (max-width: 768px) {
+  .profile-mobile-sidebar {
+    z-index: 11000 !important;
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    height: 100vh !important;
+    background: #fff !important;
+    box-shadow: -2px 0 24px 0 rgba(236,72,153,0.12);
+  }
+}
+
+@media (min-width: 769px) {
+  .profile-dropdown-desktop {
+    position: absolute !important;
+    right: 0 !important;
+    top: 60px !important;
+    min-width: 340px !important;
+    max-width: 420px !important;
+    background: #fff !important;
+    border-radius: 18px !important;
+    box-shadow: 0 8px 32px 0 rgba(236,72,153,0.18), 0 2px 8px #0002 !important;
+    border: 2px solid #f9a8d4 !important;
+    padding: 0 !important;
+    z-index: 10500 !important;
+    overflow: visible !important;
+  }
+}
+
+.profile-dropdown-desktop > div {
+  max-height: 70vh !important;
+  overflow-y: auto !important;
+}

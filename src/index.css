@@ -1,0 +1,19 @@
+body {
+	background-color: #101828;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.fullscreen-enabled .fullscreen-header {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+  min-height: 120px;
+}
+body.fullscreen-enabled .fullscreen-main {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+  min-height: calc(100vh - 180px);
+  justify-content: flex-start;
+}

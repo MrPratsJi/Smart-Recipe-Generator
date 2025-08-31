@@ -1,0 +1,45 @@
+
+const substitutions = {
+  "egg": ["flaxseed meal + water", "chia seed + water"],
+  "milk": ["almond milk", "soy milk", "oat milk"],
+  "cheese": ["nutritional yeast", "vegan cheese"],
+  "flour": ["gluten-free flour", "almond flour"],
+  "butter": ["coconut oil", "olive oil"],
+  "chicken": ["tofu", "tempeh"],
+  "beef": ["mushrooms", "jackfruit"],
+  "honey": ["maple syrup", "agave syrup"],
+  "yogurt": ["coconut yogurt", "soy yogurt", "cashew yogurt"],
+  "cream": ["coconut cream", "silken tofu", "cashew cream"],
+  "mayonnaise": ["hummus", "avocado", "vegan mayo"],
+  "fish": ["tofu + seaweed", "hearts of palm", "jackfruit"],
+  "gelatin": ["agar agar", "pectin", "cornstarch"],
+  "whipped cream": ["coconut whipped cream", "aquafaba (chickpea water)"],
+  "ice cream": ["coconut milk ice cream", "cashew ice cream", "banana nice cream"],
+  "bacon": ["tempeh bacon", "eggplant bacon", "mushroom bacon"],
+  "sour cream": ["cashew cream", "coconut yogurt", "soy yogurt + lemon juice"],
+  "parmesan": ["nutritional yeast + cashews", "almond meal + garlic powder"],
+  "bread crumbs": ["ground oats", "crushed cornflakes", "almond meal"],
+  "buttermilk": ["soy milk + lemon juice", "almond milk + vinegar", "coconut milk + lemon juice"],
+  "ricotta": ["blended tofu", "cashew ricotta", "almond ricotta"],
+  "cream cheese": ["cashew cream cheese", "tofu cream cheese", "vegan cream cheese"],
+  "milk powder": ["soy milk powder", "coconut milk powder", "almond milk powder"],
+  "egg white": ["aquafaba (chickpea water)", "flaxseed gel", "chia gel"],
+  "egg yolk": ["silken tofu", "mashed sweet potato", "nut butter"],
+  "caramel": ["date paste", "maple syrup + tahini", "coconut sugar syrup"],
+  "gelato": ["cashew gelato", "almond milk gelato", "coconut milk gelato"],
+  "custard": ["cornstarch + soy milk", "silken tofu blend", "vegan custard mix"],
+  "marshmallow": ["agar agar marshmallow", "aquafaba marshmallow", "corn syrup + agar"],
+  "collagen": ["agar agar", "pectin", "vegan gelatin"],
+  "sausage": ["seitan sausage", "lentil sausage", "mushroom sausage"],
+  "steak": ["portobello mushroom", "seitan steak", "jackfruit steak"],
+  "shrimp": ["king oyster mushroom", "hearts of palm", "konjac shrimp"],
+  "anchovy": ["capers", "miso paste", "seaweed"],
+  "oyster sauce": ["mushroom sauce", "soy sauce + sugar", "hoisin sauce"],
+  "worcestershire sauce": ["soy sauce + vinegar + sugar", "tamari + molasses", "coconut aminos"],
+  "chocolate": ["carob powder", "cocoa nibs", "raw cacao"],
+  "honey mustard": ["mustard + maple syrup", "mustard + agave", "mustard + date syrup"]
+};
+
+export function getSubstitutions(ingredient) {
+  return substitutions[ingredient.toLowerCase()] || [];
+}
