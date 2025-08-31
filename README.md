@@ -53,6 +53,6 @@ The app combines user-friendly UI with robust filtering and AI-powered ingredien
 
 ## 📢 Deployed Application Link
 
-- smart-recipe-generator-iota-nine.vercel.app
+- smart-recipe-generator-ctmds5uw3-pratyushs-projects-16e0bda5.vercel.app
 
 
