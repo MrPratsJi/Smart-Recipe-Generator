@@ -678,7 +678,7 @@ function App() {
           <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md bg-black/30">
             <div className="bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400 p-1 rounded-2xl shadow-2xl animate-pop-in flex items-center justify-center" style={{ width: '420px', height: '420px' }}>
               <div className="bg-white/90 rounded-2xl w-full h-full flex flex-col items-center justify-center gap-4">
-                  <img src="src\assets\Robot_Hi-removebg-preview.png" alt="3D Robot Hello" className="w-60 h-60 object-contain animate-float" style={{background: 'transparent'}} />
+                  <img src="/Robot_Hi-removebg-preview.png" alt="3D Robot Hello" className="w-60 h-60 object-contain animate-float" style={{background: 'transparent'}} />
                 <span className="text-xl md:text-2xl font-bold text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text animate-gradient-x text-center px-2">Click Get Started to use all the features</span>
               </div>
             </div>
@@ -1208,7 +1208,7 @@ function App() {
         <div className="flex flex-col items-end gap-2 min-w-[120px] mr-8">
           <span className="font-bold text-lg mb-1">Explore More</span>
           <div className="flex flex-col items-end gap-1">
-            <a href="#" className="hover:underline text-white/90">Docs</a>
+            <a href="https://docs.google.com/document/d/1HYgbUQ-4QJdpxeBkT7ZfEXRNhlaR9Y0873qmNHq4LUw/edit?usp=sharing" className="hover:underline text-white/90">Docs</a>
             <a href="https://forms.gle/MRH6116hsytbg29P6" className="hover:underline text-white/90">FeedBack</a>
           </div>
         </div>
