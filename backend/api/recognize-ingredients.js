@@ -3,9 +3,7 @@ import fetch from 'node-fetch';
 
 const ALLOWED_ORIGINS = [
   'http://localhost:5173',
-  'http://localhost:3001',
-  'http://localhost:3002',
-  'https://smart-recipe-generator-git-main-pratyushs-projects-16e0bda5.vercel.app',
+  'https://smart-recipe-generator-iota-nine.vercel.app',
 ];
 
 const PREVIEW_RE = /^https:\/\/smart-recipe-generator-[a-z0-9-]+\.vercel\.app$/i;
@@ -103,3 +101,4 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Vision API error' });
   }
 }
+
