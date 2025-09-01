@@ -69,7 +69,9 @@ export default function TrendingRecipes({ recipes, onSelect, showAll, setShowAll
               if (typeof recipe.Images === 'string') {
                 const urls = recipe.Images.replace(/^c\(|\)$/g, '')
                   .split(/",\s*"/)
-                  .map(s => s.replace(/^"|"$/g, ''));
+                  // .map(s => s.replace(/^"|"$/g, ''));
+                  .map(s => s.replace(/^"|"$/g, ''))
+                  .filter(s => s && s !== 'character(0)');
                 if (urls[0]) imgUrl = urls[0];
               }
               let rating = null;
