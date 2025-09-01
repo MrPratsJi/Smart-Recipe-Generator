@@ -43,9 +43,10 @@ const AuthModal = ({ onClose }) => {
         <button className="close-btn" onClick={onClose}>×</button>
         <h2>Welcome!</h2>
         <p>Sign up or log in to save your favorite recipes and more.</p>
-        <button className="google-btn" onClick={handleGoogleLogin} disabled={loading}>
+        <button className="google-btn coming-soon" disabled>
           <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google" />
           Continue with Google
+          <span className="coming-soon-tooltip">Coming soon!</span>
         </button>
         <div className="divider">or</div>
         <form className="auth-form" onSubmit={handleEmailAuth}>
