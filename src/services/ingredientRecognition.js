@@ -12,7 +12,8 @@ export async function recognizeIngredientsFromImage(imageFile) {
     reader.readAsDataURL(imageFile);
   });
 
-  const response = await fetch("https://smart-recipe-generator-back-nt3bs5jf9.vercel.app/api/recognize-ingredients", {
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || "https://smart-recipe-generator-back.vercel.app";
+  const response = await fetch(`${backendUrl}/api/recognize-ingredients`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ base64 }),
