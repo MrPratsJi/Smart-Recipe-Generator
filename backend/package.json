@@ -1,10 +1,8 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "vision-proxy.cjs",
   "type": "module",
-  "scripts": {
-    "start": "node vision-proxy.cjs"
-  },
-  "dependencies": {}
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
 }
