@@ -1,3 +1,31 @@
+.coming-soon[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  position: relative;
+}
+.coming-soon-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background: #6366f1;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 14px;
+  position: absolute;
+  left: 50%;
+  top: -14px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.15);
+  transition: opacity 0.2s;
+  z-index: 10;
+  pointer-events: none;
+}
+.coming-soon[disabled]:hover .coming-soon-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 .auth-modal-overlay {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
