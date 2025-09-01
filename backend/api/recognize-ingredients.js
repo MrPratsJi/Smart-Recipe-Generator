@@ -11,7 +11,10 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Missing base64 image' });
   }
 
-  const GOOGLE_VISION_API_KEY = 'AIzaSyBvS2BloK8Jhqow5W3QwCesL8V1_nSiqXA';
+  const GOOGLE_VISION_API_KEY = process.env.GOOGLE_VISION_API_KEY;
+  if (!GOOGLE_VISION_API_KEY) {
+    return res.status(500).json({ error: 'Google Vision API key not configured' });
+  }
 
   try {
     const visionPayload = {
@@ -40,3 +43,4 @@ export default async function handler(req, res) {
     res.status(500).json({ error: 'Vision API error' });
   }
 }
+
