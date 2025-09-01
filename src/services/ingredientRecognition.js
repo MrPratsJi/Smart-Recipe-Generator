@@ -12,7 +12,7 @@ export async function recognizeIngredientsFromImage(imageFile) {
     reader.readAsDataURL(imageFile);
   });
 
-  const response = await fetch("http://localhost:5000/recognize-ingredients", {
+  const response = await fetch("https://smart-recipe-generator-back-nt3bs5jf9.vercel.app/api/recognize-ingredients", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ base64 }),
