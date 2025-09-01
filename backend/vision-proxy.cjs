@@ -6,7 +6,11 @@ const app = express();
 app.use(cors({ origin: 'http://localhost:5173' }));
 app.use(express.json({ limit: '10mb' }));
 
-const GOOGLE_VISION_API_KEY = 'AIzaSyBvS2BloK8Jhqow5W3QwCesL8V1_nSiqXA'; 
+const GOOGLE_VISION_API_KEY = process.env.GOOGLE_VISION_API_KEY;
+if (!GOOGLE_VISION_API_KEY) {
+  console.error('Google Vision API key not configured');
+  process.exit(1);
+}
 
 app.post('/recognize-ingredients', async (req, res) => {
   const { base64 } = req.body;
